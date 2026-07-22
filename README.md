@@ -19,7 +19,7 @@ public Vec3 getMovementToShoot(final double xd, final double yd, final double zd
 ```
 The above code adds an offset with a triangle distribution of bounds *0.0172275 \* uncertainty* in each axis. See the [Minecraft Wiki](https://minecraft.wiki/w/Projectile#Shot_from_dispenser) for uncertainty values per-projectile.
 
-This creates a cube of possible vector end-points, where values closer to the center are linearly more likely. With the mod, every projectile throw's angle vector will be on one of the corners of the cube, emulating a theoretical unlucky throw.
+This creates a cube of possible vector end-points, where values closer to the center are linearly more likely. With the mod, every projectile's throw angle vector will be on one of the corners of the cube, emulating a theoretical unlucky throw.
 
 ### Why ?
 

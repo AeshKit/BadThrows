@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "bad-throws",
+	"version": "${version}",
+	"name": "BadThrows",
+	"description": "Always gives extreme projectile direction vectors.",
+	"authors": [
+		"KaidenKraft"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "GPL-2.0",
+	"icon": "assets/bad-throws/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"aesh.kai.BadThrows"
+		]
+	},
+	"mixins": [
+		"bad-throws.mixins.json",
+		{
+			"config": "bad-throws.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": ">=26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

@@ -31,6 +31,8 @@ To install, grab the latest .jar from the [releases page](https://github.com/Aes
 
 Once approved, you can install this mod from Curseforge and Modrinth as well.
 
+Please note that this mod is only compatable with the Fabric Loader, for now.
+
 # License
 
 ```

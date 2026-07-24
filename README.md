@@ -29,7 +29,7 @@ Most pearl or arrow lineups are luck-dependent. With a bad throw, the whole mach
 
 To install, grab the latest .jar from the [releases page](https://github.com/AeshKit/BadThrows/releases/) [ NOT sources ], and copy it into the `/mods/` folder of your Minecraft instance
 
-Once approved, you can install this mod from Curseforge and Modrinth as well.
+You can also install this mod directly on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/bad-throws/) and Modrinth [ Once approved ]
 
 Please note that this mod is only compatable with the Fabric Loader, for now.
 

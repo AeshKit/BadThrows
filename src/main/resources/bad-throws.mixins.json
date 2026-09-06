@@ -1,0 +1,17 @@
+{
+	"required": true,
+	"package": "aesh.kai.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"BadDispense",
+		"BadItemEntity",
+		"BadLivingEntity",
+		"BadThrow"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

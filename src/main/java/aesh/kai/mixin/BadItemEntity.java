@@ -1,22 +1,21 @@
 package aesh.kai.mixin;
 
-import net.minecraft.util.RandomSource;
+import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import net.minecraft.world.entity.item.ItemEntity;
 import org.apache.commons.lang3.RandomUtils;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Redirect;
 
 import static aesh.kai.config.Configs.syncedConfig;
 
 @Mixin(ItemEntity.class)
 public class BadItemEntity {
-    @Redirect(
+    @ModifyExpressionValue(
             method = "<init>(Lnet/minecraft/world/level/Level;DDDLnet/minecraft/world/item/ItemStack;)V",
             at = @At(value = "INVOKE", target = "Lnet/minecraft/util/RandomSource;nextDouble()D")
     )
-    private double aesh$badDouble(RandomSource instance) {
+    private double aesh$badDouble(double original) {
         if(syncedConfig.doItemEntityLogic && syncedConfig.globalToggle) return badBlock();
         return RandomUtils.insecure().randomDouble(0D, 1D);
     }

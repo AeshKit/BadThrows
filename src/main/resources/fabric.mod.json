@@ -20,11 +20,7 @@
 		]
 	},
 	"mixins": [
-		"bad-throws.mixins.json",
-		{
-			"config": "bad-throws.client.mixins.json",
-			"environment": "client"
-		}
+		"bad-throws.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.19.3",
